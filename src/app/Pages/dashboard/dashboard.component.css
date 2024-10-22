@@ -1,0 +1,41 @@
+
+.container{
+    background-color: rgb(190, 225, 163);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.admin{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(246, 241, 144);
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.vendedor{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(144, 210, 246);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.alumno{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(246, 241, 144);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.maestro{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(174, 237, 211);
+    border-radius: 15px;
+    text-align: center;
+}

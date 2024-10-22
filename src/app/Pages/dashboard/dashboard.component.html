@@ -1,0 +1,47 @@
+<div class="container">
+    @for (usuario of usuarios; track usuario.id) {
+        @if (usuario.rol.rol=="Admin") {
+            <div class="admin">
+                <div class="info">
+                    <h3> {{usuario.name}}</h3>
+                    <span>{{usuario.description}}</span>
+                </div>
+                <p>Es administrador</p>
+            </div>
+        }@else if(usuario.rol.rol=="Cliente") {
+            <app-card
+            [data]="{
+                data:usuario
+            }"
+            />
+        }
+        @else if(usuario.rol.rol=="Alumno") {
+            <div class="alumno">
+                <div class="info">
+                    <h3> {{usuario.name}}</h3>
+                    <span>{{usuario.description}}</span>
+                </div>
+                <p>Alumno</p>
+            </div>
+        }
+        @else if(usuario.rol.rol=="Maestro") {
+            <div class="maestro">
+                <div class="info">
+                    <h3> {{usuario.name}}</h3>
+                    <span>{{usuario.description}}</span>
+                </div>
+                <p>Maestro</p>
+            </div>
+        }
+        @else {
+            <div class="vendedor">
+                <div class="info">
+                    <h3> {{usuario.name}}</h3>
+                    <span>{{usuario.description}}</span>
+                </div>
+                <p>Es Vendedor</p>
+            </div>
+        }
+    }
+</div>
+

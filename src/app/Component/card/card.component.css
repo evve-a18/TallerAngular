@@ -1,0 +1,58 @@
+.card{
+    background-color: rgb(24, 61, 94);
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    .card-body{
+        .title, .info {
+            color:#bae0e0
+        }
+        .title{
+            text-align: center;
+        }
+        .info{
+            text-align: center;
+            font-weight: 560;
+
+        }
+    }
+    .card-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image{
+            border-radius: 15px;
+            height: 150px;
+            width: 250px;
+        }
+    }
+
+    .card-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            padding: 6px 10px;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: rgb(190, 225, 163);
+            color: rgb(24, 61, 94);
+            border: none;
+            border-radius: 5px;
+            &:active{
+                background-color: rgb(215, 250, 239);
+            }
+        }
+    }
+
+    .input{
+        width: 100%;
+        height: 2rem;
+        border-radius: 5px;
+        background-color: rgb(235, 245, 218);
+        border: none;
+        font-weight: 500;
+        font-size: 14 px;
+    }
+}
